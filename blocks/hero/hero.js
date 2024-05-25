@@ -24,14 +24,10 @@ const createElems = (items) => {
 export default async function decorate(block) {
   const picture = block.querySelector('picture');
   const content = block.querySelector('p');
-
   const contentLeft = createElems('div.content-left#left-content > div');
 
   content.remove(picture);
-  console.log(content);
   contentLeft.appendChild(picture);
   contentLeft.querySelector('div').appendChild(content);
-
-  console.log(contentLeft);
   block.append(contentLeft);
 }
