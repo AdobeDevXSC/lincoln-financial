@@ -44,7 +44,6 @@
 }
 
 .columns>div>.columns-img-col img {
-  /* display: block; */
   object-fit: cover;
   overflow: hidden;
   max-height: 350px;
