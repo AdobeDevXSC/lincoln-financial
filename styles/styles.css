@@ -18,8 +18,13 @@
   --light-color: #eee;
   --dark-color: #ccc;
   --text-color: black;
+
   --accent-color: #ad112b;
   --contract-color: #F3F4F6;
+  --white-color: #fff;
+  --black-color: #000;
+  --background-blue: #2596be;
+  --footer-background-color: #5a5a5a;
 
   /* fonts */
   --body-font-family: roboto, sans-serif;
@@ -195,8 +200,8 @@ a.button:any-link, button {
 }
 
 a.button:hover, a.button:focus, button:hover, button:focus  {
-  background-color: var(--link-hover-color);
   cursor: pointer;
+  font-weight: 700;
 }
 
 button:disabled, button:disabled:hover {
@@ -229,12 +234,16 @@ main img {
 
 /* sections */
 main .section {
-  padding: 64px 16px;
+  padding: 32px 16px;
 }
 
 @media (width >= 600px) {
   main .section {
     padding: 64px 32px;
+  }
+
+  main .section.tabs-container {
+    padding: 32px;
   }
 }
 
@@ -245,7 +254,7 @@ main .section {
   }
 
   .section > div {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
   }
 }

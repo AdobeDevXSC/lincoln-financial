@@ -15,7 +15,7 @@ header nav {
   align-items: center;
   gap: 0 2em;
   margin: auto;
-  max-width: 1264px;
+  max-width: 1400px;
   height: var(--nav-height);
   padding: 0 1rem;
   font-family: var(--body-font-family);
@@ -225,7 +225,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 2em;
+    gap: 1rem;
     margin: 0;
     font-size: var(--body-font-size-xs);
   }
@@ -234,6 +234,17 @@ header nav .nav-sections ul > li > ul > li {
     flex: 0 1 auto;
     position: relative;
     font-weight: 500;
+    height: 100%;
+    padding: 1.25rem 1rem 0.75rem;
+    border-bottom: 6px solid transparent;
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li:hover {
+    border-bottom: 6px solid var(--accent-color);
+  }
+
+  header nav .nav-sections .default-content-wrapper > ul > li > a {
+    text-decoration: none;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
