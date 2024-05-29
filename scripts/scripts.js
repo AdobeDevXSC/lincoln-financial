@@ -46,10 +46,10 @@ const AUDIENCES = {
   'returning-visitor': () => !!localStorage.getItem('franklin-visitor-returning'),
 };
 
-window.hlx.plugins.add('rum-conversion', {
-  url: '/plugins/rum-conversion/src/index.js',
-  load: 'lazy',
-});
+// window.hlx.plugins.add('rum-conversion', {
+//   url: '/plugins/rum-conversion/src/index.js',
+//   load: 'lazy',
+// });
 
 window.hlx.plugins.add('experimentation', {
   condition: () => getMetadata('experiment')
