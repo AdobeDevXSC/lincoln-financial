@@ -24,10 +24,15 @@ const createElems = (items) => {
 export default async function decorate(block) {
   const picture = block.querySelector('picture');
   const content = block.querySelector('p');
+  const title = block.querySelector('h1');
   const contentLeft = createElems('div.content-left#left-content > div');
+  const wrapper = document.createElement('div');
+  wrapper.classList.add('wrapper');
 
   content.remove(picture);
   contentLeft.appendChild(picture);
-  contentLeft.querySelector('div').appendChild(content);
+  wrapper.appendChild(title);
+  wrapper.appendChild(content);
+  contentLeft.querySelector('div').appendChild(wrapper);
   block.append(contentLeft);
 }

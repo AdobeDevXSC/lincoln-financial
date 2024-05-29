@@ -52,6 +52,14 @@ main .hero-container {
   font-size: 36px;
 }
 
+.hero .content-left .button-container {
+  margin: 0;
+}
+
+.hero .content-left .wrapper {
+  margin: 1rem 0;
+}
+
 @media (width >= 990px) {
   .hero .content-left>div {
     max-width: 472px;
@@ -60,7 +68,7 @@ main .hero-container {
     padding: 0;
   }
 
-  .hero .content-left>div>p {
+  .hero .content-left>div>.wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
