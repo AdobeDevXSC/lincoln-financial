@@ -16,21 +16,6 @@
   padding: 1.5rem;
 }
 
-.columns p {
-  padding-left: 5rem;
-  padding-right: 5rem;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: normal;
-  font-family: var(--body-font-family);
-  font-weight: 400;
-  text-align: center;
-  margin-top: auto;
-  margin-bottom: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .columns>div>div {
   order: 1;
   justify-self: flex-start;
@@ -51,13 +36,46 @@
   padding: 0 1rem;
 }
 
-.columns>div>div:first-of-type {
+.columns>div>.columns-img-col {
   background-color: var(--background-blue);
   justify-content: center;
+  position: relative;
+}
+
+.columns>div>.columns-img-col p:first-of-type {
+  position: absolute;
+  left: 10px;
+  padding: 0.25rem;
+}
+
+.columns>div>.columns-img-col p {
+  margin: 0;
+  color: var(--white-color);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.columns>div>.columns-img-col br {
+  display: none;
+}
+
+.columns>div>div:last-of-type p {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: normal;
+  font-family: var(--body-font-family);
+  font-weight: 400;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 @media (width <= 1200px) {
-  .columns p {
+  .columns>div>div:last-of-type p {
     font-size: 18px;
     line-height: 26px;
     padding: 5rem 3rem 3rem;
