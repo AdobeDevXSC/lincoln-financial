@@ -177,7 +177,7 @@ a:hover {
 }
 
 /* buttons */
-a.button:any-link, button {
+a.button:any-link, button:not(.hlx-badge) {
   font-family: var(--body-font-family);
   display: inline-block;
   box-sizing: border-box;
@@ -199,7 +199,7 @@ a.button:any-link, button {
   /* border-radius: 30px; */
 }
 
-a.button:hover, a.button:focus, button:hover, button:focus  {
+a.button:hover, a.button:focus, button:hover, button:focus, button:not(.hlx-badge)  {
   cursor: pointer;
   font-weight: 700;
 }
@@ -270,6 +270,8 @@ main .section.highlight {
   padding: 1rem 2rem;
   font-size: 18px;
   line-height: normal;
+  font-weight: normal;
+  border: none;
 }
 
 .hlx-preview-overlay .hlx-badge .hlx-popup * {
